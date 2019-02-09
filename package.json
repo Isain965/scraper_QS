@@ -1,0 +1,18 @@
+{
+  "name": "qs_scraper",
+  "version": "1.0.0",
+  "description": "Scraper for QS ranking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Isain Cuadra",
+    "name2": "Diego Canizales"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^6.2.0",
+    "puppeteer": "^1.12.2"
+  }
+}
