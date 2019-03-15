@@ -12,7 +12,10 @@
   },
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^6.2.0",
-    "puppeteer": "^1.12.2"
+    "axios": "^0.18.0",
+    "axios-cookiejar-support": "^0.4.2",
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^7.0.0",
+    "tough-cookie": "^3.0.1"
   }
 }
