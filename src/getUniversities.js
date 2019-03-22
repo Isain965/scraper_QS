@@ -14,5 +14,5 @@ module.exports = async () => {
 
   const data = response.data;
 
-  return data;
+  return data['data'];
 }
