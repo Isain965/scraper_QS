@@ -1,0 +1,6 @@
+{
+    "selectors": {
+        "pages": "#qs-rankings_paginate > span > a:nth-child(?)",
+        "universities": "#cid-410"
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "qs_scraper",
+  "version": "1.0.0",
+  "description": "Scraper for QS ranking",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Isain Cuadra",
+    "name2": "Diego Canizales"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "axios-cookiejar-support": "^0.4.2",
+    "cheerio": "^1.0.0-rc.2",
+    "dotenv": "^7.0.0",
+    "tough-cookie": "^3.0.1"
+  }
+}
