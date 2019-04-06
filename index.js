@@ -1,11 +1,12 @@
 require("dotenv").config();
 const getUniversities = require('./src/getUniversities');
-const getBest100Universities = require('./src/getBest100Universities');
+const getBest200Universities = require('./src/getBest200Universities');
 const getInformation = require('./src/getInformation');
 
 exports.handler = async function (event, context, callback) {
     const universities = await getUniversities();
-    const best100 = await getBest100Universities(universities);
+
+    const best200 = await getBest200Universities(universities);
 
     // Get information
     let info100 = [];
@@ -21,4 +22,6 @@ exports.handler = async function (event, context, callback) {
    }, 1000);
 
     info100 =  await Promise.all(info100);
+
+    return best200;
 };
