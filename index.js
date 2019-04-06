@@ -15,7 +15,7 @@ exports.handler = async function (event, context, callback) {
         info100.push(information);
 
         count += 1;
-        if(count == 3){
+        if(count == 100){
             clearInterval(back);
         }
    }, 1000);

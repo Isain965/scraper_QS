@@ -27,6 +27,29 @@ module.exports = async (universityUrl) => {
       resultGeneralInfo.push(text);
   }
 
+
+
+
+  const info = 'https://www.topuniversities.com/qs-profiles/rank-data/ajax/294850/513/null'
+
+  cookies = new tough.CookieJar();
+  response = await axios.post(info, {
+    withCredentials: true,
+    maxRedirects: 20,
+    jar: cookies
+  });
+
+  $ = cheerio.load(response.data);
+
+  let criteria = $('.rank-his-y');
+  console.log(criteria.length);
+  // for (let i = 0; i < criteria.length; i++) {
+  //   console.log(criteria[i]);
+  //   const text = $(criteria[i]).text();
+  //   resultGeneralInfo.push(text);
+  // }
+
+
   console.log(resultGeneralInfo);
 
   return 1;
