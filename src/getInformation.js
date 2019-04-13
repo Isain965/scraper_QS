@@ -7,7 +7,7 @@ axiosCookieJarSupport(axios);
 
 module.exports = async (universityUrl) => {
 
-  universityUrl = `${process.env.QS_UNI}${universityUrl}`;
+  universityUrl = `https://www.topuniversities.com${universityUrl}`;
   console.log(">>>> URL: " + universityUrl);
 
   let cookies = new tough.CookieJar();
